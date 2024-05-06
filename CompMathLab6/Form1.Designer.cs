@@ -28,11 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.numericUpDownX0 = new System.Windows.Forms.NumericUpDown();
@@ -71,57 +72,63 @@
             // 
             // chart1
             // 
-            chartArea3.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.chart1.Legends.Add(legend3);
-            this.chart1.Location = new System.Drawing.Point(9, 10);
-            this.chart1.Margin = new System.Windows.Forms.Padding(2);
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
+            this.chart1.Location = new System.Drawing.Point(12, 12);
+            this.chart1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chart1.Name = "chart1";
-            series7.BorderWidth = 3;
-            series7.ChartArea = "ChartArea1";
-            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series7.Legend = "Legend1";
-            series7.Name = "EulerDiffEquation";
-            series8.BorderWidth = 3;
-            series8.ChartArea = "ChartArea1";
-            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series8.Legend = "Legend1";
-            series8.Name = "UpgradeEulerDiffEquation";
-            series9.BorderWidth = 3;
-            series9.ChartArea = "ChartArea1";
-            series9.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series9.Legend = "Legend1";
-            series9.Name = "RungeKuttyMerson";
-            this.chart1.Series.Add(series7);
-            this.chart1.Series.Add(series8);
-            this.chart1.Series.Add(series9);
-            this.chart1.Size = new System.Drawing.Size(704, 498);
+            series1.BorderWidth = 3;
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series1.Legend = "Legend1";
+            series1.Name = "EulerDiffEquation";
+            series2.BorderWidth = 3;
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series2.Legend = "Legend1";
+            series2.Name = "UpgradeEulerDiffEquation";
+            series3.BorderWidth = 3;
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series3.Legend = "Legend1";
+            series3.Name = "RungeKuttyMerson";
+            series4.BorderWidth = 3;
+            series4.ChartArea = "ChartArea1";
+            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series4.Legend = "Legend1";
+            series4.Name = "Adams";
+            this.chart1.Series.Add(series1);
+            this.chart1.Series.Add(series2);
+            this.chart1.Series.Add(series3);
+            this.chart1.Series.Add(series4);
+            this.chart1.Size = new System.Drawing.Size(939, 613);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::CompMathLab6.Properties.Resources.Lab6;
-            this.pictureBox1.Location = new System.Drawing.Point(718, 9);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Location = new System.Drawing.Point(957, 11);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(173, 60);
+            this.pictureBox1.Size = new System.Drawing.Size(231, 74);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
             // numericUpDownX0
             // 
             this.numericUpDownX0.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.numericUpDownX0.Location = new System.Drawing.Point(749, 72);
-            this.numericUpDownX0.Margin = new System.Windows.Forms.Padding(2);
+            this.numericUpDownX0.Location = new System.Drawing.Point(999, 89);
+            this.numericUpDownX0.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.numericUpDownX0.Minimum = new decimal(new int[] {
             100,
             0,
             0,
             -2147483648});
             this.numericUpDownX0.Name = "numericUpDownX0";
-            this.numericUpDownX0.Size = new System.Drawing.Size(142, 29);
+            this.numericUpDownX0.Size = new System.Drawing.Size(189, 34);
             this.numericUpDownX0.TabIndex = 2;
             this.numericUpDownX0.Value = new decimal(new int[] {
             5,
@@ -133,10 +140,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label1.Location = new System.Drawing.Point(717, 74);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(956, 91);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(34, 24);
+            this.label1.Size = new System.Drawing.Size(43, 29);
             this.label1.TabIndex = 3;
             this.label1.Text = "X0";
             // 
@@ -144,10 +150,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label2.Location = new System.Drawing.Point(717, 106);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(956, 130);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(32, 24);
+            this.label2.Size = new System.Drawing.Size(42, 29);
             this.label2.TabIndex = 4;
             this.label2.Text = "Y0";
             // 
@@ -155,29 +160,28 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label3.Location = new System.Drawing.Point(717, 139);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(956, 171);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 24);
+            this.label3.Size = new System.Drawing.Size(43, 29);
             this.label3.TabIndex = 5;
             this.label3.Text = "Xn";
             // 
             // numericUpDownY0
             // 
             this.numericUpDownY0.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.numericUpDownY0.Location = new System.Drawing.Point(749, 105);
-            this.numericUpDownY0.Margin = new System.Windows.Forms.Padding(2);
+            this.numericUpDownY0.Location = new System.Drawing.Point(999, 129);
+            this.numericUpDownY0.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.numericUpDownY0.Name = "numericUpDownY0";
-            this.numericUpDownY0.Size = new System.Drawing.Size(142, 29);
+            this.numericUpDownY0.Size = new System.Drawing.Size(189, 34);
             this.numericUpDownY0.TabIndex = 6;
             // 
             // numericUpDownXn
             // 
             this.numericUpDownXn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.numericUpDownXn.Location = new System.Drawing.Point(749, 137);
-            this.numericUpDownXn.Margin = new System.Windows.Forms.Padding(2);
+            this.numericUpDownXn.Location = new System.Drawing.Point(999, 169);
+            this.numericUpDownXn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.numericUpDownXn.Name = "numericUpDownXn";
-            this.numericUpDownXn.Size = new System.Drawing.Size(142, 29);
+            this.numericUpDownXn.Size = new System.Drawing.Size(189, 34);
             this.numericUpDownXn.TabIndex = 7;
             this.numericUpDownXn.Value = new decimal(new int[] {
             10,
@@ -195,20 +199,20 @@
             "Исправленный Эйлера",
             "метод Рунге–Кутты–Мерсона",
             "Адамса 5-го порядка"});
-            this.comboBoxMethods.Location = new System.Drawing.Point(899, 41);
-            this.comboBoxMethods.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBoxMethods.Location = new System.Drawing.Point(1199, 50);
+            this.comboBoxMethods.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxMethods.Name = "comboBoxMethods";
-            this.comboBoxMethods.Size = new System.Drawing.Size(290, 32);
+            this.comboBoxMethods.Size = new System.Drawing.Size(385, 37);
             this.comboBoxMethods.TabIndex = 8;
             this.comboBoxMethods.SelectedIndexChanged += new System.EventHandler(this.comboBoxMethods_SelectedIndexChanged);
             // 
             // buttonDraw
             // 
             this.buttonDraw.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.buttonDraw.Location = new System.Drawing.Point(899, 77);
-            this.buttonDraw.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonDraw.Location = new System.Drawing.Point(1199, 95);
+            this.buttonDraw.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonDraw.Name = "buttonDraw";
-            this.buttonDraw.Size = new System.Drawing.Size(290, 47);
+            this.buttonDraw.Size = new System.Drawing.Size(387, 58);
             this.buttonDraw.TabIndex = 9;
             this.buttonDraw.Text = "Построить";
             this.buttonDraw.UseVisualStyleBackColor = true;
@@ -217,12 +221,12 @@
             // buttonClear
             // 
             this.buttonClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.buttonClear.Location = new System.Drawing.Point(899, 128);
-            this.buttonClear.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonClear.Location = new System.Drawing.Point(1199, 158);
+            this.buttonClear.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonClear.Name = "buttonClear";
-            this.buttonClear.Size = new System.Drawing.Size(290, 38);
+            this.buttonClear.Size = new System.Drawing.Size(387, 47);
             this.buttonClear.TabIndex = 10;
-            this.buttonClear.Text = "Отчистить";
+            this.buttonClear.Text = "Очистить";
             this.buttonClear.UseVisualStyleBackColor = true;
             this.buttonClear.Click += new System.EventHandler(this.buttonClear_Click);
             // 
@@ -230,15 +234,15 @@
             // 
             this.numericUpDownStep.DecimalPlaces = 5;
             this.numericUpDownStep.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.numericUpDownStep.Location = new System.Drawing.Point(942, 8);
-            this.numericUpDownStep.Margin = new System.Windows.Forms.Padding(2);
+            this.numericUpDownStep.Location = new System.Drawing.Point(1256, 10);
+            this.numericUpDownStep.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.numericUpDownStep.Maximum = new decimal(new int[] {
             10000,
             0,
             0,
             0});
             this.numericUpDownStep.Name = "numericUpDownStep";
-            this.numericUpDownStep.Size = new System.Drawing.Size(142, 29);
+            this.numericUpDownStep.Size = new System.Drawing.Size(189, 34);
             this.numericUpDownStep.TabIndex = 12;
             this.numericUpDownStep.Value = new decimal(new int[] {
             1,
@@ -250,24 +254,24 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label4.Location = new System.Drawing.Point(895, 10);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(1193, 12);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(43, 24);
+            this.label4.Size = new System.Drawing.Size(57, 29);
             this.label4.TabIndex = 11;
             this.label4.Text = "Шаг";
             // 
             // numericUpDownMaxY
             // 
             this.numericUpDownMaxY.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.numericUpDownMaxY.Location = new System.Drawing.Point(1049, 382);
+            this.numericUpDownMaxY.Location = new System.Drawing.Point(1399, 470);
+            this.numericUpDownMaxY.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.numericUpDownMaxY.Minimum = new decimal(new int[] {
             100,
             0,
             0,
             -2147483648});
             this.numericUpDownMaxY.Name = "numericUpDownMaxY";
-            this.numericUpDownMaxY.Size = new System.Drawing.Size(140, 29);
+            this.numericUpDownMaxY.Size = new System.Drawing.Size(187, 34);
             this.numericUpDownMaxY.TabIndex = 13;
             this.numericUpDownMaxY.Value = new decimal(new int[] {
             3,
@@ -279,9 +283,10 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label5.Location = new System.Drawing.Point(971, 384);
+            this.label5.Location = new System.Drawing.Point(1295, 473);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(72, 24);
+            this.label5.Size = new System.Drawing.Size(93, 29);
             this.label5.TabIndex = 18;
             this.label5.Text = "Макс У";
             // 
@@ -289,9 +294,10 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label6.Location = new System.Drawing.Point(971, 489);
+            this.label6.Location = new System.Drawing.Point(1295, 602);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(65, 24);
+            this.label6.Size = new System.Drawing.Size(86, 29);
             this.label6.TabIndex = 19;
             this.label6.Text = "Мин Х";
             // 
@@ -299,9 +305,10 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label7.Location = new System.Drawing.Point(971, 454);
+            this.label7.Location = new System.Drawing.Point(1295, 559);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(72, 24);
+            this.label7.Size = new System.Drawing.Size(93, 29);
             this.label7.TabIndex = 20;
             this.label7.Text = "Макс Х";
             // 
@@ -309,36 +316,39 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label8.Location = new System.Drawing.Point(971, 419);
+            this.label8.Location = new System.Drawing.Point(1295, 516);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(65, 24);
+            this.label8.Size = new System.Drawing.Size(86, 29);
             this.label8.TabIndex = 21;
             this.label8.Text = "Мин У";
             // 
             // numericUpDownMinY
             // 
             this.numericUpDownMinY.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.numericUpDownMinY.Location = new System.Drawing.Point(1049, 417);
+            this.numericUpDownMinY.Location = new System.Drawing.Point(1399, 513);
+            this.numericUpDownMinY.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.numericUpDownMinY.Minimum = new decimal(new int[] {
             100,
             0,
             0,
             -2147483648});
             this.numericUpDownMinY.Name = "numericUpDownMinY";
-            this.numericUpDownMinY.Size = new System.Drawing.Size(140, 29);
+            this.numericUpDownMinY.Size = new System.Drawing.Size(187, 34);
             this.numericUpDownMinY.TabIndex = 22;
             // 
             // numericUpDownMaxX
             // 
             this.numericUpDownMaxX.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.numericUpDownMaxX.Location = new System.Drawing.Point(1049, 452);
+            this.numericUpDownMaxX.Location = new System.Drawing.Point(1399, 556);
+            this.numericUpDownMaxX.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.numericUpDownMaxX.Minimum = new decimal(new int[] {
             100,
             0,
             0,
             -2147483648});
             this.numericUpDownMaxX.Name = "numericUpDownMaxX";
-            this.numericUpDownMaxX.Size = new System.Drawing.Size(140, 29);
+            this.numericUpDownMaxX.Size = new System.Drawing.Size(187, 34);
             this.numericUpDownMaxX.TabIndex = 23;
             this.numericUpDownMaxX.Value = new decimal(new int[] {
             10,
@@ -349,14 +359,15 @@
             // numericUpDownMinX
             // 
             this.numericUpDownMinX.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.numericUpDownMinX.Location = new System.Drawing.Point(1049, 487);
+            this.numericUpDownMinX.Location = new System.Drawing.Point(1399, 599);
+            this.numericUpDownMinX.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.numericUpDownMinX.Minimum = new decimal(new int[] {
             100,
             0,
             0,
             -2147483648});
             this.numericUpDownMinX.Name = "numericUpDownMinX";
-            this.numericUpDownMinX.Size = new System.Drawing.Size(140, 29);
+            this.numericUpDownMinX.Size = new System.Drawing.Size(187, 34);
             this.numericUpDownMinX.TabIndex = 24;
             this.numericUpDownMinX.Value = new decimal(new int[] {
             5,
@@ -368,9 +379,10 @@
             // 
             this.numericUpDownAccuracy.DecimalPlaces = 10;
             this.numericUpDownAccuracy.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.numericUpDownAccuracy.Location = new System.Drawing.Point(997, 173);
+            this.numericUpDownAccuracy.Location = new System.Drawing.Point(1329, 213);
+            this.numericUpDownAccuracy.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.numericUpDownAccuracy.Name = "numericUpDownAccuracy";
-            this.numericUpDownAccuracy.Size = new System.Drawing.Size(192, 29);
+            this.numericUpDownAccuracy.Size = new System.Drawing.Size(256, 34);
             this.numericUpDownAccuracy.TabIndex = 25;
             this.numericUpDownAccuracy.Value = new decimal(new int[] {
             1,
@@ -383,19 +395,20 @@
             // 
             this.labelAccuracy.AutoSize = true;
             this.labelAccuracy.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.labelAccuracy.Location = new System.Drawing.Point(895, 173);
+            this.labelAccuracy.Location = new System.Drawing.Point(1193, 213);
+            this.labelAccuracy.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelAccuracy.Name = "labelAccuracy";
-            this.labelAccuracy.Size = new System.Drawing.Size(96, 24);
+            this.labelAccuracy.Size = new System.Drawing.Size(123, 29);
             this.labelAccuracy.TabIndex = 26;
             this.labelAccuracy.Text = "Точность";
             this.labelAccuracy.Visible = false;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1201, 528);
+            this.ClientSize = new System.Drawing.Size(1601, 650);
             this.Controls.Add(this.labelAccuracy);
             this.Controls.Add(this.numericUpDownAccuracy);
             this.Controls.Add(this.numericUpDownMinX);
@@ -419,7 +432,7 @@
             this.Controls.Add(this.numericUpDownX0);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.chart1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "РЕШЕНИЕ ДИФФЕРЕНЦИАЛЬНЫХ УРАВНЕНИЙ";
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();

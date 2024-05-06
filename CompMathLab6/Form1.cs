@@ -49,6 +49,8 @@ namespace CompMathLab6
                         new RungeKuttyMersonDiffEquation((double)numericUpDownStep.Value, _func, (double)numericUpDownAccuracy.Value), 2);
                     break;
                 case 3:
+                    Draw((double)numericUpDownX0.Value, (double)numericUpDownY0.Value, (double)numericUpDownXn.Value,
+                        new FifthAdams((double)numericUpDownStep.Value, _func), 3);
                     break;
             }
         }
