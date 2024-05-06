@@ -20,12 +20,12 @@ public class FifthAdams : IDiffEquationMethod
     //Рунге–Кутты–Мерсона 5 - го порядка
     public double Set(double x, double y)
     {
-        k[0] = _step * _funcXY.GetResult(x, y);
-        k[1] = _step * _funcXY.GetResult(x + 1 / 4d * _step, y + 1 / 4d * k[0] * _step);
-        k[2] = _step * _funcXY.GetResult(x + 1 / 4d * _step, y + 1 / 8d * k[0] * _step + 1 / 8d * k[1] * _step);
-        k[3] = _step * _funcXY.GetResult(x + 1 / 2d * _step, y - 1 / 2d * k[1] + k[2] * _step);
-        k[4] = _step * _funcXY.GetResult(x + 3 / 4d * _step, y + 3 / 16d * k[0] * _step + 9 / 16d * k[3] * _step);
-        k[5] = _step * _funcXY.GetResult(x + _step, y - 3 / 7d * k[0] * _step + 2 / 7d * k[1] * _step + 12 / 7d * k[2] * _step - 12 / 7d * k[3] * _step + 8 / 7d * k[4] * _step);
+        k[0] = _funcXY.GetResult(x, y);
+        k[1] = _funcXY.GetResult(x + 1 / 4d * _step, y + 1 / 4d * k[0] * _step);
+        k[2] = _funcXY.GetResult(x + 1 / 4d * _step, y + 1 / 8d * k[0] * _step + 1 / 8d * k[1] * _step);
+        k[3] = _funcXY.GetResult(x + 1 / 2d * _step, y - 1 / 2d * k[1] + k[2] * _step);
+        k[4] = _funcXY.GetResult(x + 3 / 4d * _step, y + 3 / 16d * k[0] * _step + 9 / 16d * k[3] * _step);
+        k[5] = _funcXY.GetResult(x + _step, y - 3 / 7d * k[0] * _step + 2 / 7d * k[1] * _step + 12 / 7d * k[2] * _step - 12 / 7d * k[3] * _step + 8 / 7d * k[4] * _step);
         temp[_elementIndex] = y + _step / 90d * (7 * k[0] + 32 * k[2] + 12 * k[3] + 32 * k[4] + 7 * k[5]);
         temp2[_elementIndex] = x;
         return temp[_elementIndex];       
@@ -41,7 +41,7 @@ public class FifthAdams : IDiffEquationMethod
             if(_elementIndex == 0)
             {
                 temp[_elementIndex] = y;
-                temp2[_elementIndex] = x - _step;
+                temp2[_elementIndex] = x;
                 _elementIndex++;
             }
             return Set(x, y);
