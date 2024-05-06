@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series17 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series18 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series19 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series20 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.numericUpDownX0 = new System.Windows.Forms.NumericUpDown();
@@ -72,37 +72,37 @@
             // 
             // chart1
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
+            chartArea5.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea5);
+            legend5.Name = "Legend1";
+            this.chart1.Legends.Add(legend5);
             this.chart1.Location = new System.Drawing.Point(12, 12);
             this.chart1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chart1.Name = "chart1";
-            series1.BorderWidth = 3;
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series1.Legend = "Legend1";
-            series1.Name = "EulerDiffEquation";
-            series2.BorderWidth = 3;
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series2.Legend = "Legend1";
-            series2.Name = "UpgradeEulerDiffEquation";
-            series3.BorderWidth = 3;
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series3.Legend = "Legend1";
-            series3.Name = "RungeKuttyMerson";
-            series4.BorderWidth = 3;
-            series4.ChartArea = "ChartArea1";
-            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series4.Legend = "Legend1";
-            series4.Name = "Adams";
-            this.chart1.Series.Add(series1);
-            this.chart1.Series.Add(series2);
-            this.chart1.Series.Add(series3);
-            this.chart1.Series.Add(series4);
+            series17.BorderWidth = 3;
+            series17.ChartArea = "ChartArea1";
+            series17.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series17.Legend = "Legend1";
+            series17.Name = "EulerDiffEquation";
+            series18.BorderWidth = 3;
+            series18.ChartArea = "ChartArea1";
+            series18.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series18.Legend = "Legend1";
+            series18.Name = "UpgradeEulerDiffEquation";
+            series19.BorderWidth = 3;
+            series19.ChartArea = "ChartArea1";
+            series19.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series19.Legend = "Legend1";
+            series19.Name = "RungeKuttyMerson";
+            series20.BorderWidth = 3;
+            series20.ChartArea = "ChartArea1";
+            series20.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series20.Legend = "Legend1";
+            series20.Name = "Adams5";
+            this.chart1.Series.Add(series17);
+            this.chart1.Series.Add(series18);
+            this.chart1.Series.Add(series19);
+            this.chart1.Series.Add(series20);
             this.chart1.Size = new System.Drawing.Size(939, 613);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
@@ -113,7 +113,8 @@
             this.pictureBox1.Location = new System.Drawing.Point(957, 11);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(231, 74);
+            this.pictureBox1.Size = new System.Drawing.Size(230, 74);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
@@ -195,10 +196,10 @@
             this.comboBoxMethods.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.comboBoxMethods.FormattingEnabled = true;
             this.comboBoxMethods.Items.AddRange(new object[] {
-            "метод Эйлера",
-            "Исправленный Эйлера",
-            "метод Рунге–Кутты–Мерсона",
-            "Адамса 5-го порядка"});
+            "Метод Эйлера",
+            "Исправленный метод Эйлера",
+            "Метод Рунге–Кутты–Мерсона",
+            "Метод Адамса 5-го порядка"});
             this.comboBoxMethods.Location = new System.Drawing.Point(1199, 50);
             this.comboBoxMethods.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxMethods.Name = "comboBoxMethods";
@@ -264,7 +265,7 @@
             // 
             this.numericUpDownMaxY.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.numericUpDownMaxY.Location = new System.Drawing.Point(1399, 470);
-            this.numericUpDownMaxY.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numericUpDownMaxY.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownMaxY.Minimum = new decimal(new int[] {
             100,
             0,
@@ -327,7 +328,7 @@
             // 
             this.numericUpDownMinY.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.numericUpDownMinY.Location = new System.Drawing.Point(1399, 513);
-            this.numericUpDownMinY.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numericUpDownMinY.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownMinY.Minimum = new decimal(new int[] {
             100,
             0,
@@ -341,7 +342,7 @@
             // 
             this.numericUpDownMaxX.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.numericUpDownMaxX.Location = new System.Drawing.Point(1399, 556);
-            this.numericUpDownMaxX.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numericUpDownMaxX.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownMaxX.Minimum = new decimal(new int[] {
             100,
             0,
@@ -360,7 +361,7 @@
             // 
             this.numericUpDownMinX.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.numericUpDownMinX.Location = new System.Drawing.Point(1399, 599);
-            this.numericUpDownMinX.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numericUpDownMinX.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownMinX.Minimum = new decimal(new int[] {
             100,
             0,
@@ -380,7 +381,7 @@
             this.numericUpDownAccuracy.DecimalPlaces = 10;
             this.numericUpDownAccuracy.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.numericUpDownAccuracy.Location = new System.Drawing.Point(1329, 213);
-            this.numericUpDownAccuracy.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numericUpDownAccuracy.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownAccuracy.Name = "numericUpDownAccuracy";
             this.numericUpDownAccuracy.Size = new System.Drawing.Size(256, 34);
             this.numericUpDownAccuracy.TabIndex = 25;
@@ -407,7 +408,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(1601, 650);
             this.Controls.Add(this.labelAccuracy);
             this.Controls.Add(this.numericUpDownAccuracy);

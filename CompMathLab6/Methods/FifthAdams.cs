@@ -33,11 +33,20 @@ public class FifthAdams : IDiffEquationMethod
 
     public double UseMethod(double x, double y)
     {
+        // Нахождение первых 5 точек методом 5-го порядка
         if (_elementIndex < 4)
         {
             _elementIndex++;
+            // Первая точка уже известна заполняем её
+            if(_elementIndex == 0)
+            {
+                temp[_elementIndex] = y;
+                temp2[_elementIndex] = x - _step;
+                _elementIndex++;
+            }
             return Set(x, y);
         }
+        // Метод Адамса 5-го порядка
         y = y + _step / 720d * (1901d * _funcXY.GetResult(temp2[4], temp[4])
             - 2774d * _funcXY.GetResult(temp2[3], temp[3])
             + 2616d * _funcXY.GetResult(temp2[2], temp[2])

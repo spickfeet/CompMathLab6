@@ -25,8 +25,8 @@ namespace CompMathLab6
             chart1.Series[seriesIndex].Points.AddXY(x, y);
             while (xMax >= x)
             {
-                y = method.UseMethod(x, y);
                 x += method.Step;
+                y = method.UseMethod(x, y);
                 chart1.Series[seriesIndex].Points.AddXY(x, y);
             }
         }
