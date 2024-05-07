@@ -1,12 +1,5 @@
 ﻿using CompMathLab6.Methods;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CompMathLab6
@@ -21,6 +14,12 @@ namespace CompMathLab6
 
         private void Draw(double x, double y,double xMax, IDiffEquationMethod method,int seriesIndex)
         {
+            chart1.Series[0].Points.Clear();
+            for (double r = 5d; r <= 12d;r += 0.01d)
+            {
+                double res = -11 / 4d * Math.Exp(10 - 2 * r) - r / 2d + 21 / 4d;
+                chart1.Series[0].Points.AddXY(r,res);
+            }
             chart1.Series[seriesIndex].Points.Clear();
             chart1.Series[seriesIndex].Points.AddXY(x, y);
             while (xMax >= x)
@@ -38,19 +37,19 @@ namespace CompMathLab6
             {
                 case 0:
                     Draw((double)numericUpDownX0.Value, (double)numericUpDownY0.Value, (double)numericUpDownXn.Value,
-                        new EulerDiffEquation((double)numericUpDownStep.Value, _func), 0);
+                        new EulerDiffEquation((double)numericUpDownStep.Value, _func), 1);
                     break;
                 case 1:
                     Draw((double)numericUpDownX0.Value, (double)numericUpDownY0.Value, (double)numericUpDownXn.Value,
-                        new UpgradeEulerDiffEquation((double)numericUpDownStep.Value, _func), 1);
+                        new UpgradeEulerDiffEquation((double)numericUpDownStep.Value, _func), 2);
                     break;
                 case 2:
                     Draw((double)numericUpDownX0.Value, (double)numericUpDownY0.Value, (double)numericUpDownXn.Value,
-                        new RungeKuttyMersonDiffEquation((double)numericUpDownStep.Value, _func, (double)numericUpDownAccuracy.Value), 2);
+                        new RungeKuttyMersonDiffEquation((double)numericUpDownStep.Value, _func, (double)numericUpDownAccuracy.Value), 3);
                     break;
                 case 3:
                     Draw((double)numericUpDownX0.Value, (double)numericUpDownY0.Value, (double)numericUpDownXn.Value,
-                        new FifthAdams((double)numericUpDownStep.Value, _func), 3);
+                        new FifthAdams((double)numericUpDownStep.Value, _func), 4);
                     break;
             }
         }
